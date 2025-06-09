@@ -45,6 +45,7 @@ htmlcov/
 │   ├── tempCodeRunnerFile.py    # Temporary file, often created by code runners/IDEs (can be ignored or removed)
 │   └── transform.py             # Module for data transformation operations
 ├── .coverage                    # Coverage report file from code testing
+├── .env                         # database credensial from lokal user  
 ├── main.py                      # Main script for orchestrating data processing workflow
 ├── products.csv                 # Example CSV file containing product data
 ├── project-pemrosesan-data1-7480caee9e37 # (Potentially a service account key file or similar; consider renaming for clarity if safe)
