@@ -50,3 +50,11 @@ htmlcov/
 ├── project-pemrosesan-data1-7480cae... # (Potentially a service account key file or similar; consider renaming for clarity if safe)
 └── requirements.txt             # Lists all Python dependencies required for the project
 ```
+
+### **Feature & Storage:**
+- **Extract:** Mengambil data produk dari situs menggunakan requests dan BeautifulSoup.
+- **Transform:** Membersihkan, manipulasi dan memformat data menggunakan pandas kedalam bentuk dataframe.
+- Load: Menyimpan data hasil pada file **main.py** scraping ke dalam bentuk:
+- File CSV (products.csv)
+- Google Sheets (Link Spreadsheet)
+- PostgreSQL Database
