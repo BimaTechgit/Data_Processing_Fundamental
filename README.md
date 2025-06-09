@@ -151,7 +151,7 @@ Agar program dapat terhubung dengan database PostgreSQL milik Anda, silakan ikut
     
 ### Opsi 2: Menggunakan Environment Variable di Terminal
 Jika tidak ingin menggunakan file `.env`, Anda dapat langsung memasukkan credential di terminal:
-- **Linux / Git Bash:**
+- **Git Bash  enviroment VS Code:**
     ```bash
     DB_NAME=nama_database DB_USER=username DB_PASS=password python main.py
     ```
@@ -159,7 +159,7 @@ Jika tidak ingin menggunakan file `.env`, Anda dapat langsung memasukkan credent
     ```powershell
     $env:DB_NAME="nama_database"; $env:DB_USER="username"; $env:DB_PASS="password"; python main.py
     ```
-- **CMD:**
+- **CMD  enviroment VS Code:**
     ```cmd
     set DB_NAME=nama_database && set DB_USER=username && set DB_PASS=password && python main.py
     ```
