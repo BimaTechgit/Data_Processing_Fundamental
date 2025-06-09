@@ -130,7 +130,7 @@ Secara default, database akan tersambung menggunakan credential berikut:
 Jalankan program dengan environment variable berikut:
 ```bash
 DB_NAME=nama_database_anda DB_USER=username_anda DB_PASS=password_anda DB_HOST=host_anda DB_PORT=port_anda python main.py
-
+```
 
 
 
