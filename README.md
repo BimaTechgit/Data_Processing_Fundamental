@@ -93,7 +93,7 @@ pytest --cov=tests --cov-report=term-missing
 
 ### **Jalankan Database Testing:**
 
-pada kode berikut ini:
+kemudian pada kode ini:
 
 ```python
 import os
@@ -126,13 +126,6 @@ Fungsi `save_to_postgresql()` akan secara otomatis membaca kredensial dari envir
 - `DB_HOST` (default: `localhost`)
 - `DB_PORT` (default: `5432`)
 - `TABLE_NAME` (default: `fashion_products`)
-
-pada kode tersebut kita menggunakan kredensial dari username bimatech dan password bimadev yang merupakan owner dari database tersebut.
-
-tetapi jika anda ingin menggunakan username lain seperti reviewer maka cukup ketik saja seperti ini di CLI:
-
-```python
-DB_USER=reviewer DB_PASS=devops python main.py
 ```
 
 
