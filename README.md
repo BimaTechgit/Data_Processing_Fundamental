@@ -125,7 +125,6 @@ Secara default, database akan tersambung menggunakan credential berikut:
 - DB_PASS: bimadev
 - DB_HOST: localhost
 - DB_PORT: 5432
-## PostgreSQL Configuration
 
 Agar program dapat terhubung dengan database PostgreSQL milik Anda, silakan ikuti langkah berikut:
 
