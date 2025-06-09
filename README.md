@@ -67,4 +67,27 @@ htmlcov/
 python main.py
 ```
 
+### **Jalankan Unit Testing**
+```python
+python -m pytest tests
+```
+
+### **Jalankan Coverage Testing**
+
+**Cara 1:**
+
+```python
+coverage run -m pytest tests 
+```
+
+**Cara 2:**
+```python
+pytest --cov=tests --cov-report=term-missing
+```
+
+**Cara 3: via html**
+- pastikan anda sudah menginstall live server (jika belum silahkan install live server pada enviroment VS Code terlebih dahulu)
+- buka folder **htmlcov/** dan cari **index.html**
+- klik kanan dan pilih **"Open with Live Server"**
+
 
