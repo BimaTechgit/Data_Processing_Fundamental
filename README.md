@@ -58,5 +58,13 @@ htmlcov/
   - File CSV: (products.csv)
   - Google Sheets: https://docs.google.com/spreadsheets/d/1dUQtnSseh1j4xHRjNbPBAwfwAXN6N6I1RKLh6Q5Y9Sk/edit?usp=sharing
   - PostgreSQL Database:
-  - login as owner  : bimatech password bimadev
-  - login as member : reviewers password devops
+ 
+## **Cara Menjalankan Proyek:**
+
+### **Jalankan Proses ETL (Extract-Transform-load):**
+
+```python
+python main.py
+```
+
+
