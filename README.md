@@ -85,9 +85,10 @@ coverage run -m pytest tests
 pytest --cov=tests --cov-report=term-missing
 ```
 
-**Cara 3: via html**
+**Cara 3: Via HTML**
 - pastikan anda sudah menginstall live server (jika belum silahkan install live server pada enviroment VS Code terlebih dahulu)
 - buka folder **htmlcov/** dan cari **index.html**
 - klik kanan dan pilih **"Open with Live Server"**
+- setelah itu anda akan diarahkan ke halaman web coverage dan bisa melihat hasil report dari fitur fitur yang ada dalam web
 
 
