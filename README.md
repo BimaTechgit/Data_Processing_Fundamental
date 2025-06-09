@@ -101,17 +101,22 @@ import os
 import pandas as pd
 from sqlalchemy import create_engine
 
-def save_to_postgresql(data):
+def save_to_postgresql(data, db_name=None, user=None, password=None, host=None, port=None, table_name="fashion_products"):
     try:
-        db_name = os.getenv("DB_NAME", "fashion_dicoding")
-        user = os.getenv("DB_USER", "bimatech")
-        password = os.getenv("DB_PASS", "bimadev")
-        host = os.getenv("DB_HOST", "localhost")
-        port = os.getenv("DB_PORT", 5432)
-        table_name = os.getenv("TABLE_NAME", "fashion_products")
+        # Gunakan environment variable, kalau tidak ada pakai default
+        db_name = db_name or os.getenv("DB_NAME", "fashion_dicoding")
+        user = user or os.getenv("DB_USER", "bimatech")
+        password = password or os.getenv("DB_PASS", "bimadev")
+        host = host or os.getenv("DB_HOST", "localhost")
+        port = port or int(os.getenv("DB_PORT", 5432))
 
+        # Buat koneksi engine ke PostgreSQL
         engine = create_engine(f"postgresql://{user}:{password}@{host}:{port}/{db_name}")
+
+        # Konversi ke DataFrame (jika belum)
         df = pd.DataFrame(data)
+
+        # Simpan ke table (replace = hapus dulu jika sudah ada)
         df.to_sql(table_name, engine, if_exists="replace", index=False)
 
         print(f"[INFO] Data berhasil disimpan ke PostgreSQL table: {table_name} ({len(df)} baris)")
