@@ -125,12 +125,41 @@ Secara default, database akan tersambung menggunakan credential berikut:
 - DB_PASS: bimadev
 - DB_HOST: localhost
 - DB_PORT: 5432
+## PostgreSQL Configuration
 
-### Jika ingin menggunakan database PostgreSQL Anda sendiri:
-Jalankan program dengan environment variable berikut:
-```bash
-DB_NAME=nama_database_anda DB_USER=username_anda DB_PASS=password_anda DB_HOST=host_anda DB_PORT=port_anda python main.py
-```
+Agar program dapat terhubung dengan database PostgreSQL milik Anda, silakan ikuti langkah berikut:
+
+### Opsi 1: Menggunakan File `.env`
+1. Buat file `.env` di root project.
+2. Masukkan kredensial PostgreSQL Anda seperti berikut:
+    ```
+    DB_NAME=nama_database_anda
+    DB_USER=username_postgres_anda
+    DB_PASS=password_postgres_anda
+    DB_HOST=localhost
+    DB_PORT=5432
+    ```
+3. Jalankan program seperti biasa:
+    ```bash
+    python main.py
+    ```
+    
+### Opsi 2: Menggunakan Environment Variable di Terminal
+Jika tidak ingin menggunakan file `.env`, Anda dapat langsung memasukkan credential di terminal:
+- **Linux / Git Bash:**
+    ```bash
+    DB_NAME=nama_database DB_USER=username DB_PASS=password python main.py
+    ```
+- **PowerShell:**
+    ```powershell
+    $env:DB_NAME="nama_database"; $env:DB_USER="username"; $env:DB_PASS="password"; python main.py
+    ```
+- **CMD:**
+    ```cmd
+    set DB_NAME=nama_database && set DB_USER=username && set DB_PASS=password && python main.py
+    ```
+ Anda bebas menggunakan database dengan konfigurasi Anda sendiri. Program ini tidak bergantung pada database lokal peserta.
+
 
 
 
