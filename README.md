@@ -134,7 +134,7 @@ Secara default, database akan tersambung menggunakan credential berikut:
 
 Agar program dapat terhubung dengan database PostgreSQL milik Anda, silakan ikuti langkah berikut:
 
-### Opsi 1: Menggunakan File `.env`
+### Opsi 1: Menggunakan File `.env` **(Sangat Disarankan)**
 1. Buat file `.env` di root project.
 2. Masukkan kredensial PostgreSQL Anda seperti berikut:
     ```
