@@ -55,6 +55,6 @@ htmlcov/
 - **Extract:** Mengambil data produk dari situs menggunakan requests dan BeautifulSoup.
 - **Transform:** Membersihkan, manipulasi dan memformat data menggunakan pandas kedalam bentuk dataframe.
 - Load: Menyimpan data hasil pada file **main.py** scraping ke dalam bentuk:
-- File CSV (products.csv)
-- Google Sheets (Link Spreadsheet)
-- PostgreSQL Database
+  - File CSV (products.csv)
+  - Google Sheets (Link Spreadsheet)
+  - PostgreSQL Database
