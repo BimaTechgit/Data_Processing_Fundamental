@@ -4,7 +4,7 @@
 - **Email**       : riqjuniorbimasakti@gmail.com
 - **DicodingID**  : Bimatech
 
-#### **Deskripsi:**
+### **Deskripsi:**
 
 Repositori ini dibuat sebagai bagian dari penyelesaian submission kelas Fundamental Pemrosesan Data. Aplikasi ini menjalankan proses ETL (Extract, Transform, Load) untuk mengolah data produk fashion dari situs Fashion Studio Dicoding, mencakup pengambilan data, pembersihan, dan penyimpanan ke beberapa tempat seperti CSV, Googlesheet dan Postgresql.
 
@@ -12,7 +12,7 @@ Repositori ini dibuat sebagai bagian dari penyelesaian submission kelas Fundamen
 https://fashion-studio.dicoding.dev/
 
 
-#### **Struktur file dan folder:**
+### **Struktur file dan folder:**
 ```python
 htmlcov/
 |   ├── .gitignore                   # Specifies intentionally untracked files to ignore by Git
