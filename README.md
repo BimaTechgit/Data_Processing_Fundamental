@@ -8,7 +8,7 @@
 
 Repositori ini dibuat sebagai bagian dari penyelesaian submission kelas Fundamental Pemrosesan Data. Aplikasi ini menjalankan proses ETL (Extract, Transform, Load) untuk mengolah data produk fashion dari situs Fashion Studio Dicoding, mencakup pengambilan data, pembersihan, dan penyimpanan ke beberapa tempat seperti CSV, Googlesheet dan Postgresql.
 
-#### **Tautan Website yang digunakan:**
+### **Tautan Website yang digunakan:**
 https://fashion-studio.dicoding.dev/
 
 
