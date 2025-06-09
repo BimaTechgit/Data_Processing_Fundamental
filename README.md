@@ -55,6 +55,8 @@ htmlcov/
 - **Extract:** Mengambil data produk dari situs menggunakan requests dan BeautifulSoup.
 - **Transform:** Membersihkan, manipulasi dan memformat data menggunakan pandas kedalam bentuk dataframe.
 - Load: Menyimpan data hasil pada file **main.py** scraping ke dalam bentuk:
-  - File CSV (products.csv)
-  - Google Sheets (Link Spreadsheet)
-  - PostgreSQL Database
+  - File CSV: (products.csv)
+  - Google Sheets: https://docs.google.com/spreadsheets/d/1dUQtnSseh1j4xHRjNbPBAwfwAXN6N6I1RKLh6Q5Y9Sk/edit?usp=sharing
+  - PostgreSQL Database:
+  - login as owner  : bimatech password bimadev
+  - login as member : reviewers password devops
