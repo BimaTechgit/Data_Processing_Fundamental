@@ -118,15 +118,19 @@ def save_to_postgresql(data):
         print(f"[ERROR] Gagal menyimpan ke PostgreSQL: {e}")
 ```
 
-Fungsi `save_to_postgresql()` akan secara otomatis membaca kredensial dari environment variabel berikut:
+Secara default, database akan tersambung menggunakan credential berikut:
 
-- `DB_NAME` (default: `fashion_dicoding`)
-- `DB_USER` (default: `bimatech`)
-- `DB_PASS` (default: `bimadev`)
-- `DB_HOST` (default: `localhost`)
-- `DB_PORT` (default: `5432`)
-- `TABLE_NAME` (default: `fashion_products`)
-```
+- DB_NAME: fashion_dicoding
+- DB_USER: bimatech
+- DB_PASS: bimadev
+- DB_HOST: localhost
+- DB_PORT: 5432
+
+### Jika ingin menggunakan database PostgreSQL Anda sendiri:
+Jalankan program dengan environment variable berikut:
+```bash
+DB_NAME=nama_database_anda DB_USER=username_anda DB_PASS=password_anda DB_HOST=host_anda DB_PORT=port_anda python main.py
+
 
 
 
