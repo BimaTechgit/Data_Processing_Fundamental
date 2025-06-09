@@ -12,8 +12,24 @@ Repositori ini dibuat sebagai bagian dari penyelesaian submission kelas Fundamen
 https://fashion-studio.dicoding.dev/
 
 
-#### **Struktur file dan folder: **
+#### **Struktur file dan folder:**
 ```python
+htmlcov/
+|   ├── .gitignore                   # Specifies intentionally untracked files to ignore by Git
+|   ├── class_index.html             # HTML report file, likely showing coverage by class
+|   ├── coverage_html_cb_497bf287.js # JavaScript file for interactive coverage reports
+|   ├── favicon_32_cb_58284776.png   # Favicon for the HTML coverage reports
+|   ├── function_index.html          # HTML report file, likely showing coverage by function
+|   ├── index.html                   # Main HTML entry point for the code coverage report
+|   ├── keybd_closed_cb_ce680311.png # Image file, possibly for keyboard shortcuts in the report
+|   ├── status.json                  # JSON file containing status data for the coverage report
+|   ├── style_cb_718ce007.css        # CSS stylesheet for the HTML coverage reports
+|   ├── z_c810615cce0f7acb___init__py.html  # HTML coverage report for __init__.py
+|   ├── z_c810615cce0f7acb_extract_py.html   # HTML coverage report for extract.py
+|   ├── z_c810615cce0f7acb_load_gsheet_...  # HTML coverage report for load_gsheet.py (truncated name)
+|   ├── z_c810615cce0f7acb_load_postgres... # HTML coverage report for load_postgres.py (truncated name)
+|   ├── z_c810615cce0f7acb_load_py.html      # HTML coverage report for load.py
+|   └── z_c810615cce0f7acb_transform_py.html # HTML coverage report for transform.py
 ├── tests/
 │   ├── __pycache__/             # Cache folder for Python compiled bytecode
 │   ├── test_extract.py          # Unit tests for data extraction functionalities
