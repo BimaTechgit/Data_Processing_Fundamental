@@ -155,7 +155,7 @@ Jika tidak ingin menggunakan file `.env`, Anda dapat langsung memasukkan credent
     ```bash
     DB_NAME=nama_database DB_USER=username DB_PASS=password python main.py
     ```
-- **PowerShell:**
+- **PowerShell enviroment VS Code:**
     ```powershell
     $env:DB_NAME="nama_database"; $env:DB_USER="username"; $env:DB_PASS="password"; python main.py
     ```
