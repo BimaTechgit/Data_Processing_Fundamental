@@ -91,4 +91,49 @@ pytest --cov=tests --cov-report=term-missing
 - klik kanan dan pilih **"Open with Live Server"**
 - setelah itu anda akan diarahkan ke halaman web coverage dan bisa melihat hasil report dari fitur fitur yang ada dalam web
 
+### **Jalankan Database Testing:**
+
+pada kode berikut ini:
+
+```python
+import os
+import pandas as pd
+from sqlalchemy import create_engine
+
+def save_to_postgresql(data):
+    try:
+        db_name = os.getenv("DB_NAME", "fashion_dicoding")
+        user = os.getenv("DB_USER", "bimatech")
+        password = os.getenv("DB_PASS", "bimadev")
+        host = os.getenv("DB_HOST", "localhost")
+        port = os.getenv("DB_PORT", 5432)
+        table_name = os.getenv("TABLE_NAME", "fashion_products")
+
+        engine = create_engine(f"postgresql://{user}:{password}@{host}:{port}/{db_name}")
+        df = pd.DataFrame(data)
+        df.to_sql(table_name, engine, if_exists="replace", index=False)
+
+        print(f"[INFO] Data berhasil disimpan ke PostgreSQL table: {table_name} ({len(df)} baris)")
+    except Exception as e:
+        print(f"[ERROR] Gagal menyimpan ke PostgreSQL: {e}")
+```
+
+Fungsi `save_to_postgresql()` akan secara otomatis membaca kredensial dari environment variabel berikut:
+
+- `DB_NAME` (default: `fashion_dicoding`)
+- `DB_USER` (default: `bimatech`)
+- `DB_PASS` (default: `bimadev`)
+- `DB_HOST` (default: `localhost`)
+- `DB_PORT` (default: `5432`)
+- `TABLE_NAME` (default: `fashion_products`)
+
+pada kode tersebut kita menggunakan kredensial dari username bimatech dan password bimadev yang merupakan owner dari database tersebut.
+
+tetapi jika anda ingin menggunakan username lain seperti reviewer maka cukup ketik saja seperti ini di CLI:
+
+```python
+DB_USER=reviewer DB_PASS=devops python main.py
+```
+
+
 
