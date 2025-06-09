@@ -47,7 +47,7 @@ htmlcov/
 ├── .coverage                    # Coverage report file from code testing
 ├── main.py                      # Main script for orchestrating data processing workflow
 ├── products.csv                 # Example CSV file containing product data
-├── project-pemrosesan-data1-7480cae... # (Potentially a service account key file or similar; consider renaming for clarity if safe)
+├── project-pemrosesan-data1-7480caee9e37 # (Potentially a service account key file or similar; consider renaming for clarity if safe)
 └── requirements.txt             # Lists all Python dependencies required for the project
 ```
 
